@@ -1,0 +1,838 @@
+*{
+  font-family: 'Exo', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+  .navBar ul a{
+    color: white;
+  }
+  
+  .navBar ul {
+    list-style-type: none;
+    display: block;
+    overflow: hidden;
+    background-color: rgb(25, 90, 90);
+    margin: 0;
+    padding: 0;
+    color: aqua;
+  }
+  .navBar ul li{
+    float: left;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 4px 5px;
+    font-weight: bolder;
+    transition: 0.3s;
+  }
+  .navBar ul li:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow:  0px 0px 6px 2px rgb(93, 243, 243);
+    color: rgb(25, 90, 90);
+  }
+
+  .navBar ul img{
+    width: 40px;
+    height: 35px;
+    float: left;
+    padding: 6px;
+    border-radius: 40px;
+  }
+  .container {
+    padding: 16px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #78e5f3;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 104%;
+    opacity: 0.9;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: medium;
+    color: rgb(6, 68, 68);
+  }
+  .RegisterContent{
+    width: 96%;
+  }
+  /* .signin{
+    width: 87%;
+  } */
+  
+  .registerbtn:hover {
+    opacity: 1;
+    box-shadow: 0 0 5px  skyblue;
+
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 100%;
+  }
+
+ .container input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+input:focus{
+    border-left: 4px solid  #78e5f3;
+
+  }
+  
+  /* Set a style for all buttons */
+ .container #login {
+    background-color: #78e5f3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: medium;
+    color: rgb(6, 68, 68);
+    width: 100%;
+  }
+  #LoginH2{
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  
+  .container #login:hover {
+    opacity: 0.8;
+  }
+  .container #login:visited {
+    background-color: rgb(180, 177, 177);
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  .container {
+    padding: 16px;
+  }
+  .container1{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+  }
+  .content1{
+    border: 2px solid black;
+  }
+  .container2{
+    box-shadow: 0 0 10px rgba(39, 41, 41, 0.897);
+    height: 94vh;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: rgb(28, 109, 109);
+    color: white;
+}
+.container2 .content2{
+  width: 100%;
+  background-color: rgba(22, 21, 21, 0.089);
+}
+.container2 .content2 .input{
+  width: 90%;
+  box-shadow: 0 0 9px rgb(127, 236, 218);
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.container2 .content2 form #updateButton{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  background-color:  rgb(218, 250, 250);
+  color: rgb(14, 72, 80);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 7px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 12px rgb(117, 252, 252);
+  opacity: 0.8;
+  transition: .4s;
+}
+.container2 .content2 form{
+  display: block;
+  margin: auto;
+  width: 74%;
+}
+.container2 .content2 form #updateButton:hover{
+  opacity: 1;
+}
+.container2 .content2 .userImage{
+    display: block;
+    margin: auto;
+    width: 97px;
+}
+.container2 .content2 .userImage img
+{
+  border-radius: 50%;
+    box-shadow: 0 0 3px 2px skyblue;
+    background-size: cover;
+    filter: contrast(125%);
+}
+.error-msg {
+  border: 1px solid rgb(233, 113, 113);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 7px 0;
+  background-color: rgb(252, 204, 204);
+  color: rgb(245, 12, 12);
+  font-family: monospace;
+  width: 96%;
+
+}
+.error-msg button{
+  border-radius: 50%;
+  background-color: rgb(248, 99, 99);
+  border: none;
+  color: white;
+  opacity: 0.5;
+  margin-left: 3px;
+
+}
+.error-msg button:hover{
+  opacity: 1;
+}
+
+.success-msg{
+  border: 1px solid rgb(110, 243, 121);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 7px 0;
+  background-color: rgb(216, 245, 218);
+  color: rgb(4, 252, 24);
+  font-family: monospace;
+  width: 96%;
+}
+.success-msg button{
+  border-radius: 50%;
+  background-color: rgb(105, 238, 65);
+  border: none;
+  color: white;
+  opacity: 0.5;
+  margin-left: 3px;
+}
+.success-msg button:hover{
+  opacity: 1;
+}
+
+.container3 {
+  margin: 0;
+  padding: 0;
+  background: rgb(210, 237, 248);
+  /* background-image: url('./static/images/sharosh-rajasekher-T7s_TnKO-dk-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100vh;
+  color: rgb(212, 250, 252);
+}
+.container3 .content3{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 6%;
+  width: 70%;
+  height: 70vh;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0px 10px 10px  rgb(86, 88, 88);
+  background-color: rgb(25, 90, 90);
+}
+.container3 .content3 b{
+  font-size: 50px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  display: block;
+}
+.container3 .content3 p{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.container3 .content3 a{
+  /* margin-top: 30px; */
+  text-decoration: none;
+  color: rgb(14, 92, 85);
+  display: inline-block;
+  border-radius: 4px;
+  background-color: turquoise;
+  width: fit-content;
+  margin: auto;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  padding: 4px;
+  opacity: 0.8;
+  box-shadow: 0px 0px 12px rgb(117, 252, 252);
+  transition: .4s;
+}
+.container3 .content3 a:hover{
+  opacity: 1;
+}
+.container3 .content3:hover{
+  box-shadow: 0px 0px 10px 6px rgb(5, 71, 71);
+}
+
+.post-container{
+  display: block;
+  justify-content: center;
+  margin: auto;
+  height: 74vh;
+  width: 70%;
+  flex-wrap: wrap-reverse;
+  margin-top: 34px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 7px 2px rgb(99, 102, 102);
+}
+.post-container .blankContainer{
+  height: 60px;
+  background-color: rgb(45, 104, 105);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: rgb(222, 252, 250);
+}
+.post-container .blankContainer b{
+position: relative;
+top: 5px;
+left: 6px;
+}
+
+
+.post-container .post-content form .postinput{
+  display: block;
+  margin:10px auto;
+  width: 90%;
+  box-shadow: 0px 0px 4px 0px rgb(45, 104, 105);
+  border-radius: 3px;
+}
+.post-container .post-content form label{
+  margin-left: 20px;
+  color:rgb(7, 75, 77) ;
+}
+
+.post-container .post-content form #postButton{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 70px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color:rgb(45, 104, 105) ;
+  opacity: 0.8;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+ box-shadow: 3px 3px 6px 2px rgb(39, 43, 43);
+ transition: .4s;
+}
+.post-container .post-content form #postButton:hover{
+ opacity: 1;
+}
+
+.post-container .post-content form #textInput{
+  display: block;
+  margin:10px auto;
+  width: 90%;
+  box-shadow: 0px 0px 4px 0px rgb(45, 104, 105);
+  border-radius: 3px;
+  border: none;
+  background: #f1f1f1;
+  padding: 15px;
+}
+.post-container .post-content form #textInput:focus{
+  background-color: #ddd;
+  outline: none;
+  border-left: 4px solid  #78e5f3;
+}
+
+/* css for My Post */
+
+.myPost-container{
+  display: block;
+  margin: 15px auto;
+  width: 63%;
+  height: auto;
+  padding: 1px;
+  background: rgb(227, 235, 235);
+  border-radius: 5px;
+  box-shadow: 0px 3px 9px black;
+}
+.myPost-container .headPost h2{
+  font-size: 20px;
+  text-align: center;
+  color: rgb(29, 88, 88);
+  letter-spacing: 2px;
+}
+.myPost-container .headPost .badge{
+  background: rgb(17, 95, 85);
+    border-radius: 5px;
+    color: white;
+    padding: 1px 10px;
+}
+.myPost-container .headPost hr{
+  margin-top: 6px;
+  box-shadow: 0px 3px 4px 0px rgb(19, 16, 16) ;
+}
+/* .myPost-container .blog-cards:hover{
+  transform: scale(1.01);
+  transition: .5s;
+  cursor: pointer;
+} */
+
+.myPost-container .blog-cards{
+  /* display: flex; */
+  display: block;
+  margin:60px auto;
+  flex-flow: wrap;
+  /* justify-content: center; */
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px grey;
+  /* padding: 8px; */
+  width: 45%;
+  background-color: rgba(250, 246, 241, 0.582);
+}
+.myPost-container .blog-cards .image img{
+  /* transform: translateY(-25px); */
+  position: relative;
+  width: 100%;
+  height: 214px;
+  /* border-radius: 4px; */
+  /* box-shadow: 0px 0px 12px 2px grey; */
+  background: rgba(247, 246, 245, 0.959);
+}
+.myPost-container .blog-cards .blog-content{
+  overflow-y: hidden;
+  padding: 10px;
+  /* width: 100%; */
+}
+#hr2{
+  border: 1px solid rgba(180, 177, 177, 0.644);
+  margin-bottom: 10px;
+}
+.myPost-container .blog-cards .HeaderContent img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /* display: inline-block; */
+}
+
+.myPost-container .blog-cards .HeaderContent span{
+  color: rgba(48, 44, 44, 0.767);
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 2px;
+  top: -11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  left: 8px;
+}
+.myPost-container .blog-cards .HeaderContent{
+  padding: 8px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.myPost-container .blog-cards #Date{
+  position: relative;
+  top: 11px;
+  left: 0;
+  color: grey;
+  font-size: 10px;
+  display: block;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+/* footer */
+.footer {
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  transition-duration: 0.5s;
+  width: 100%;
+  background-color: rgb(25, 90, 90);
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+}
+.footer a{
+  font-size: x-large; 
+  cursor: pointer;
+  color: #86eef1;
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+}
+.footer a:hover{
+  font-size: 22px;
+  transition: 0.6s;
+  color: white;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  padding:5px 12px;
+}
+.icons i{
+  font-size: larger;
+  cursor: pointer;
+}
+.icons #trash:hover{
+  color: red;
+  transition: 0.4s;
+  transform: scale(1.2);
+
+}
+.success{
+  border: 1px solid rgb(23, 107, 107);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 7px auto;
+  /* background-color: rgb(103, 165, 163); */
+  box-shadow: inset 0 0 10px  rgb(37, 99, 109);
+  color: rgb(7, 109, 109);
+  width: 56%;
+  font-weight: bold;
+}
+.success button{
+  border-radius: 50%;
+  background-color: rgb(23, 107, 107);
+  border: none;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  margin-left: 3px;
+}
+.success button:hover{
+  opacity: 1;
+}
+.redheart{
+  color: red;
+}
+.redheart:hover{
+  color: red;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+#showlikes{
+  font-size: 13px;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+  color: rgba(34, 32, 32, 0.959);
+  letter-spacing: 1px;
+}
+
+.comments #commentInput{
+  border-bottom: 1px solid grey;
+  width: 90%;
+  padding: 5px;
+  display: flex;
+  margin:20px auto;
+  justify-content: center;
+}
+.comments #commentInput:focus{
+  border-bottom: 1px solid rgb(16, 87, 97);
+  box-shadow: 0 1px 0 0 rgb(13, 96, 107) ;
+  background: none;
+}
+
+#commentP {
+  /* border: 1px solid grey; */
+  padding: 0px;
+  margin: 4px 7px;
+  font-size: 14px;
+
+}
+#commentB{
+  margin-right: 8px;
+}
+#commentText{
+  display: inline;
+  letter-spacing: 0.5px;
+  color: rgb(94, 93, 93);
+  text-transform: none;
+}
+#trashForComment{
+  cursor: pointer;
+  color: rgb(187, 72, 72);
+  margin-left: 14px;
+  font-size: small;
+  position: relative;
+  top: -1px;
+}
+
+#trashForComment:hover{
+  transform: scale(1.1);
+}
+
+.LoginContainer{
+  display: flex;
+  margin:20px auto;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgb(7, 7, 7);
+  height: 75vh;
+  width: 70%;
+  background-color: rgb(25, 97, 97);
+border-radius: 5px;
+}
+
+.RegisterContainer{
+  display: flex;
+  margin:20px auto;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgb(7, 7, 7);
+  height: 100vh;
+  width: 70%;
+  background-color: rgb(25, 97, 97);
+border-radius: 5px;
+}
+.RegisterInput{
+  width: 100%;
+}
+.comments #commentInput:focus{
+  border-left: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) 
+  {
+  display: none;
+  }
+  .topnav  .menuicon {
+    float: right;
+    display: block;
+   position: relative;
+   top: 11.5px;
+   color: white;
+   font-size: x-large;
+   right: 14px;
+  }
+  /* Login page */
+
+  .LoginContainer{
+    width: 90%;
+    height: 65vh;
+    margin:45px auto;
+  }
+  .container{
+    display:block;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+  }
+  #LoginH2{
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  /* register page */
+  .RegisterContainer{
+    width: 87%;
+    padding: 5px;
+    height: 76vh;
+    margin-bottom: 32px;
+  }
+  .RegisterContent{
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .RegisterInput{
+    display: block;
+    margin:10px auto;
+    justify-content: center;
+    width: 86%;
+  }
+  .registerbtn{
+    display: block;
+    justify-content: center;
+    margin:10px auto;
+    width: 96%;
+  }
+  .signin{
+    width: 87%;
+  }
+  /* home Page */
+  .container3{
+    height: 91vh;
+  }
+ .container3 .content3{
+    width: 87%;
+    top: 3.5%;
+    padding: 10px;
+  }
+  .container3 .content3 b {
+    font-size: 30px;
+  }
+  /* Profile Page */
+  .container2{
+    width: 85%;
+    height: 76vh;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .container2 .content2 .input{
+    width: 86%;
+  }
+  /* mypost page */
+  .myPost-container{
+    width: 99%;
+    margin:0;
+  }
+  .myPost-container .blog-cards{
+    width: 87%;
+    margin: 40px auto;
+  }
+  .myPost-container .blog-cards .image img{
+    width: 100%;
+  }
+  .myPost-container .blog-cards #Date{
+    left: 0;
+    top: 13px;
+    font-weight: bolder;
+  }
+  /* .comments */
+  .comments #commentInput:focus{
+    border-left: none;
+  }
+  #commentText{
+  font-size: 12px;
+  }
+  #trashForComment{
+    font-size: medium;
+    position: unset;
+  }
+  /* like button */
+  #heart{
+    font-size: 25px;
+  }
+  /* Footer */
+  .footer{
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+  .post-container{
+    /* height: 83vh; */
+    width: 93%;
+    margin-top: 15px;
+  }
+  .post-container .post-content form .postinput{
+    width: 82%;
+  }
+  .post-container .post-content form #textInput{
+    width: 82%;
+    
+  }
+
+}
+
+.menuicon{
+  display: none;
+}
+
+/* Only for Menu Bar */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+    
+  }
+  .topnav.responsive .menuicon {
+    position: absolute;
+    top: 11.5px;
+    color: white;
+    font-size: x-large;
+    right: 14px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    list-style-type: none;
+    box-shadow: 0 1px 1px skyblue;
+  }
+  .topnav.responsive a li {
+  width: 100%;    
+  text-decoration: none;
+    list-style-type: none;
+  }
+  .topnav.responsive a:first-child {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 6px 2px rgb(12, 99, 99);
+    color: rgb(25, 90, 90);
+  }
+  .topnav.responsive  .menuicon{
+    color: rgb(25, 90, 90);
+  }
+}
