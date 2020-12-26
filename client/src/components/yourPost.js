@@ -106,9 +106,7 @@ function YourPost() {
 
 
     if (userphoto.photo) {
-        var str = userphoto.photo;
-        str = str.replace("public/", "");
-        var profilepic = str;
+        var profilepic = userphoto.photo;
     } else {
         profilepic = DefaultImage;
     }
@@ -140,7 +138,7 @@ function YourPost() {
 
                             <div className="image">
                                 <img
-                                    src={data.postimage ? data.postimage.replace("public/", "") : Default}
+                                    src={data.postimage ? data.postimage : Default}
                                     alt="PostIMG"
                                 />
                             </div>

@@ -146,7 +146,7 @@ function AllPosts() {
 
                             <div className="image">
                                 <img
-                                    src={data.postimage ? data.postimage.replace("public/", "") : Default}
+                                    src={data.postimage ? data.postimage : Default}
                                     alt="PostImg"
                                 />
                             </div>

@@ -41,7 +41,12 @@ function Profile() {
         formData.append('id', state.id);
         try {
             let response = await axios.put('/api/user/updateProfile', formData,
-                { headers: { 'content-type': 'multipart/form-data' } }
+                {
+                    headers: {
+                        'content-type': 'multipart/form-data',
+                        "Access-Control-Allow-Credentials": "*",
+                    }
+                }
             );
             setmsg(response.data.message);
             setState({
@@ -90,9 +95,9 @@ function Profile() {
 
     }
     if (state.photo) {
-        var str = state.photo;
-        str = str.replace("public/", "");
-        var profilepic = str;
+        // var str = state.photo;
+        // str = str.replace("public/", "");
+        var profilepic = state.photo;
     } else {
         profilepic = DefaultImage;
     }

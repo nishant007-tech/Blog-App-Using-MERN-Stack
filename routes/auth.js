@@ -11,17 +11,39 @@ const auth = require('./verify');
 //Multer is used to Upload images in diskstorage with many features
 const multer = require('multer');
 
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
+//cloudinary
+const cloudinary = require('cloudinary').v2;
+
+cloudinary.config({
+    cloud_name: 'nishant007-tech-cloud',
+    api_key: '556798487224165',
+    api_secret: 'SNCx_gf_DmyblbnZuVIb3HyT31Y'
+});
+
 //path used to maintain the original extension name of image like, jpg, gif etc.
 // cb(error: Error, destination: string)
-var storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, './public/uploads');
+var storage = new CloudinaryStorage({
+    cloudinary: cloudinary,
+    params: {
+        folder: 'blogimages',
+        format: async () => "jpeg",
+        public_id: (req, file) => file.filename,
     },
-    filename: function (req, file, cb) {
-        cb(null, Date.now() + file.originalname);
-    }
 });
+
 var upload = multer({ storage: storage });
+
+//for normal multer
+// var storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//         cb(null, './public/uploads');
+//     },
+//     filename: function (req, file, cb) {
+//         cb(null, Date.now() + file.originalname);
+//     }
+// });
+// var upload = multer({ storage: storage });
 
 router.post('/register', async (req, res) => {
     //lets validate the data before creating User //joi will throw an object as return
@@ -85,6 +107,7 @@ router.get('/profile', auth, async (req, res) => {
 router.put('/updateProfile', upload.single('profileImage'), async (req, res) => {
 
     try {
+
         let profileUser = await userModel.findById({ _id: req.body.id });
 
         if (req.body.name < 6) {
@@ -98,6 +121,7 @@ router.put('/updateProfile', upload.single('profileImage'), async (req, res) => 
             return res.status(400).json({ message: "Profile Already Updated!" });
         }
         profileUser.name = req.body.name;
+
         try {
             const savedUser = await profileUser.save();
             res.json({ savedUser, message: "Profile Updated Successfully!" });

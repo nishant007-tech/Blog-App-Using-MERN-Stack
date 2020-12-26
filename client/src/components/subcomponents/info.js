@@ -25,7 +25,7 @@ function Info({ value }) {
     return (
         <>
             <img
-                src={userDetail.photo ? userDetail.photo.replace("public/", "") : DefaultImage}
+                src={userDetail.photo ? userDetail.photo : DefaultImage}
                 alt="UserIMG"
             />
             <span>{userDetail.name} </span>
